@@ -1,7 +1,7 @@
 # Portfolio-Website
 
-##Tech Stack
+## Tech 
 
--HTML
--CSS
--JavaScript
+- HTML 
+- CSS
+- JavaScript
