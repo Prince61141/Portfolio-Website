@@ -1,6 +1,6 @@
 # Portfolio-Website
 
-## Tech 
+## Tech Stack
 
 - HTML 
 - CSS
