@@ -15,6 +15,7 @@ function headerShadow() {
   const navHeader = document.getElementById("header");
   const scrollicon = document.getElementById("Scroll-up");
   const theme = document.getElementById("Theme-change");
+
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     navHeader.style.height = "70px";
     navHeader.style.lineHeight = "70px";
