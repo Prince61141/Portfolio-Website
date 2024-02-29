@@ -240,11 +240,11 @@ nav {
         color: #777;
     }
 
-    .education-card {
+    .education-card, .featured-text-card {
         color: #868e96;
     }
 
-    .education-card p {
+    .education-card p ,.featured-text-info{
         color: #777;
     }
 
@@ -339,14 +339,6 @@ nav {
     padding-left: 20px;
 }
 
-.featured-text-card span {
-    background: var(--third-color);
-    color: var(--color-white);
-    padding: 3px 8px;
-    font-size: 12px;
-    border-radius: 5px;
-}
-
 .featured-name {
     font-size: 50px;
     font-weight: 600;
@@ -362,7 +354,6 @@ nav {
 .featured-text-info {
     font-size: 15px;
     margin-bottom: 30px;
-    color: var(--text-color-second);
 }
 
 .featured-text-btn {
@@ -577,13 +568,12 @@ h3 {
     font-weight: 700;
     line-height: normal;
     margin: 0;
-    padding-top: 0.5rem
+    padding-top: 0.5rem;
 }
 
 .education-text-duration {
     font-size: 16px;
     margin: 0;
-    padding-top: .5rem;
 }
 
 .education-text-desc {
@@ -725,6 +715,13 @@ h3 {
     height: 120px;
     border-radius: 50%;
 }
+.profile-img img{
+    border-radius: 50%;
+    box-shadow: 0 0.5rem 1rem #0000004d;
+    height: 120px;
+    object-fit: cover;
+    width: 120px;
+}
 .contact-detail>h2 {
     align-items: center;
     text-align: center;
@@ -833,9 +830,12 @@ footer {
 
 .footer-social-icons {
     display: flex;
+    cursor: pointer;
     gap: 30px;
 }
-
+.footer-social-icons a{
+    color: black;
+}
 .bottom-footer {
     font-size: 14px;
     margin-top: 10px;
@@ -941,11 +941,27 @@ footer {
     .featured-name {
         font-size: 40px;
     }
-
+    .featured-box {
+        height: 70vh;
+    }
     .project-box {
         width: 100%;
     }
-
+    .section{
+        padding-block: 3.5em;
+    }
+    .education-text-school {
+        font-size: 18px;
+    }
+    .education-text-subHeader {
+        font-size: 14px;
+    }
+    .education-text-duration {
+        font-size: 12px;
+        margin: 0;
+        float: right;
+        width: 70%;
+    }
     .form-inputs {
         flex-direction: column;
     }

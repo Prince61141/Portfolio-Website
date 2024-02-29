@@ -66,19 +66,14 @@ const srLeft = ScrollReveal({
   reset: true
 })
 
+
 srLeft.reveal('.about-info', { delay: 100 })
 srLeft.reveal('.education-card-right', { delay: 200 })
 srLeft.reveal('.contact-info', { delay: 100 })
 
 /* -- ABOUT SKILLS & FORM BOX -- */
-const srRight = ScrollReveal({
-  origin: 'right',
-  distance: '80px',
-  duration: 2000,
-  reset: true
-})
-srRight.reveal('.skills-box', { delay: 100 })
-srRight.reveal('.form-control', { delay: 100 })
+srLeft.reveal('.skills-box', { delay: 100 })
+srLeft.reveal('.form-control', { delay: 100 })
 
 
 
