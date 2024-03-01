@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+    <link rel="icon" href="./src/icon.png">
     <link rel="stylesheet" href="./style.css">
 
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
 
     <title>Portfolio</title>
 </head>
@@ -30,19 +30,19 @@
             <div class="nav-menu" id="myNavMenu">
                 <ul class="nav_menu_list">
                     <li class="nav_list">
-                        <a href="#home" class="nav-link active-link">Home</a>
+                        <a href="#home" class="nav-link active-link" onclick="openNav()">Home</a>
                     </li>
                     <li class="nav_list">
-                        <a href="#about" class="nav-link">Skills</a>
+                        <a href="#about" class="nav-link" onclick="openNav()">Skills</a>
                     </li>
                     <li class="nav_list">
-                        <a href="#education" class="nav-link">Education</a>
+                        <a href="#education" class="nav-link" onclick="openNav()">Education</a>
                     </li>
                     <li class="nav_list">
-                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#projects" class="nav-link" onclick="openNav()">Projects</a>
                     </li>
                     <li class="nav_list">
-                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link" onclick="openNav()">Contact</a>
                     </li>
                     <!-- Toggle Theme -->
                     <li id="Theme-change" class="">
@@ -96,7 +96,8 @@
                 </ul>
             </div>
             <div class="nav-menu-btn">
-                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+                <i class="uil uil-bars" onclick="openNav()"></i>
+                <i class="fa fa-times" onclick="openNav()"></i>
             </div>
         </nav>
 
@@ -118,21 +119,24 @@
                     </div>
                     <div class="featured-text-btn">
                         <button class="btn blue-btn"><a href="#contact">Contact Us</a></button>
-                        <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                        <a href="./src/resume.pdf" download="resume"></a><button class="btn">Download CV <i
+                                class="uil uil-file-alt"></i></button></a>
                     </div>
                     <div class="social-media">
-                        <a href="" class="icon-button github">
+                        <a href="https://github.com/Prince61141/" class="icon-button github">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="" class="icon-button linkedin">
+                        <a href="https://www.linkedin.com/in/prince-ghoda/" class="icon-button linkedin">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="" class="icon-button google"><i class="fas fa-envelope"></i>
+                        <a href="" class="icon-button google">
+                            <i class="fas fa-envelope"></i>
                         </a>
-                        <a href="" class="icon-button gitlab">
-                            <i class="fab fa-gitlab"></i>
+                        <a href="https://www.instagram.com/prince_61141_/?hl=en" class="icon-button instagram">
+                            <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="" class="icon-button facebook">
+                        <a href="https://www.facebook.com/people/Prince-Patel/pfbid0kAdR1EvGaYNZEhSPiJEJ36bn4zjEPb9ybYihdi3LT9r9M2dG2mhHDiJrh25rUem5l/"
+                            class="icon-button facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </div>
@@ -148,13 +152,15 @@
                     <div class="col">
                         <div class="about-info">
                             <h3>My introduction</h3>
-                            <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge
-                                frameworks and libraries,which allows me to implement interactive features.
-                                Additionally, I have experirence working with content management systems (CMS) like
-                                WordPress.
+                            <p> I am a skilled web developer proficient in HTML, CSS, JavaScript, and and other cutting
+                                edge frameworks and libraries WordPress. My expertise lies in creating dynamic and
+                                visually appealing websites using these technologies. I have experirence working with
+                                content management systems like WordPress.
                             </p>
                             <div class="about-btn">
-                                <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                                <a href="./src/resume.pdf" download="resume"><button class="btn">Download
+                                        CV <i class="uil uil-import"></i></button></a>
+
                             </div>
                         </div>
                     </div>
@@ -227,7 +233,7 @@
                                     <h5 class="education-text-subHeader">BACHELOR OF TECHNOLOGY</h5>
                                     <p class="education-text-course">Computer Science & Engineering</p>
                                     <p class="education-text-desc">
-                                        CGPA: 8.38
+                                        CGPA: 9.62
                                     </p>
                                 </div>
                             </div>
@@ -243,8 +249,8 @@
 
                     <div class="education-card"
                         style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-640905075000494-2;">
-                        <div class="education-card-left"><img class="education-img"
-                                src="./src/vasishtha_logo.jpeg" alt="vasishtha_logo"></div>
+                        <div class="education-card-left"><img class="education-img" src="./src/vasishtha_logo.jpeg"
+                                alt="vasishtha_logo"></div>
                         <div class="education-card-right">
                             <div>
                                 <h5 class="education-text-school">Vasishtha Vidhyalaya</h5>
@@ -253,7 +259,7 @@
                                     <p class="education-text-course">BASIC SCIENCE WITH COMPUTER
                                     </p>
                                     <p class="education-text-desc">
-                                        Percentage: 89.30
+                                        Percentage: 79.23
                                     </p>
                                 </div>
                             </div>
@@ -267,8 +273,7 @@
                     <div class="education-card"
                         style="animation-fill-mode: both; animation-duration: 1000ms; animation-delay: 0ms; animation-iteration-count: 1; opacity: 1; animation-name: react-reveal-640905075000494-2;">
                         <div class="education-card-left"><img crossorigin="anonymous" class="education-img"
-                                src="./src/sadhana_logo.jpg"
-                                alt="sadhana_logo"></div>
+                                src="./src/sadhana_logo.jpg" alt="sadhana_logo"></div>
                         <div class="education-card-right">
                             <div>
                                 <h5 class="education-text-school">Sadhana Vidyabhavan</h5>
@@ -277,7 +282,7 @@
                                     <p class="education-text-course">MULTIDISCIPLINARY
                                     </p>
                                     <p class="education-text-desc">
-                                        Percentage: 96.34
+                                        Percentage: 81.12
                                     </p>
                                 </div>
                             </div>
@@ -415,8 +420,7 @@
                             <div class="profile-img">
                                 <img src="./src/profile.jpg" alt="Prince Ghoda">
                             </div>
-                            <div class="contact-detail" 
-                                >
+                            <div class="contact-detail">
                                 <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
                                 <p><i class="uil uil-envelope"></i> Email&nbsp; : princepatel61141@gmail.com</p>
                                 <p><i class="uil uil-phone"></i> Phone : 9586472317</p>
@@ -444,9 +448,6 @@
 
         <!-- --------------- FOOTER --------------- -->
         <footer>
-            <div class="top-footer">
-                <p>Prince</p>
-            </div>
             <div class="middle-footer">
                 <ul class="footer-menu">
                     <li class="footer_menu_list">
@@ -464,13 +465,17 @@
                 </ul>
             </div>
             <div class="footer-social-icons">
-                <div class="icon"><a href=""><i class="uil uil-instagram"></i></a></div>
-                <div class="icon"><a href=""><i class="uil uil-linkedin-alt"></i></a></div>
-                <div class="icon"><a href=""><i class="uil uil-dribbble"></i></a></div>
-                <div class="icon"><a href=""><i class="uil uil-github-alt"></i></a></div>
+                <div class="icon"><a href="https://www.instagram.com/prince_61141_/?hl=en"><i
+                            class="uil uil-instagram"></i></a></div>
+                <div class="icon"><a href="https://www.linkedin.com/in/prince-ghoda/"><i
+                            class="uil uil-linkedin-alt"></i></a></div>
+                <div class="icon"><a
+                        href="https://www.facebook.com/people/Prince-Patel/pfbid0kAdR1EvGaYNZEhSPiJEJ36bn4zjEPb9ybYihdi3LT9r9M2dG2mhHDiJrh25rUem5l/"><i
+                            class="uil uil-facebook"></i></a></div>
+                <div class="icon"><a href="https://github.com/Prince61141/"><i class="uil uil-github-alt"></i></a></div>
             </div>
             <div class="bottom-footer">
-                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">prince</a> - All rights reserved</p>
+                <p>Copyright &copy; prince - All rights reserved</p>
             </div>
         </footer>
     </div>
