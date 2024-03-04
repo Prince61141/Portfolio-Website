@@ -122,23 +122,34 @@
                         <a href="./src/resume.pdf" download="resume"></a><button class="btn">Download CV <i
                                 class="uil uil-file-alt"></i></button></a>
                     </div>
-                    <div class="social-media">
-                        <a href="https://github.com/Prince61141/" class="icon-button github">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/prince-ghoda/" class="icon-button linkedin">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="" class="icon-button google">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="https://www.instagram.com/prince_61141_/?hl=en" class="icon-button instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/people/Prince-Patel/pfbid0kAdR1EvGaYNZEhSPiJEJ36bn4zjEPb9ybYihdi3LT9r9M2dG2mhHDiJrh25rUem5l/"
-                            class="icon-button facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
+                    <div class="">
+                        <ul class="social-media">
+                            <li class="icon-button github">
+                                <a href="https://github.com/Prince61141/">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="icon-button linkedin">
+                                <a href="https://www.linkedin.com/in/prince-ghoda/" >
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="icon-button google">
+                                <a href="mailto:princepatel61141@gmail.com">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/prince_61141_/?hl=en" class="icon-button instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/people/Prince-Patel/pfbid0kAdR1EvGaYNZEhSPiJEJ36bn4zjEPb9ybYihdi3LT9r9M2dG2mhHDiJrh25rUem5l/" class="icon-button facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -422,24 +433,25 @@
                             </div>
                             <div class="contact-detail">
                                 <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                                <p><i class="uil uil-envelope"></i> Email&nbsp; : princepatel61141@gmail.com</p>
+                                <p><i class="uil uil-envelope"></i> Email&nbsp;: princepatel61141@gmail.com</p>
                                 <p><i class="uil uil-phone"></i> Phone : 9586472317</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="form-control">
+                        <form action="" class="form-control" id="contact-form">
+                            <div class="alert">Your message sent</div>
                             <div class="form-inputs">
-                                <input type="text" class="input-field" placeholder="Name">
-                                <input type="text" class="input-field" placeholder="Email">
+                                <input type="text" class="input-field" placeholder="Name" id="name" required>
+                                <input type="email" class="input-field" placeholder="Email" id="email" required>
                             </div>
                             <div class="text-area">
-                                <textarea placeholder="Message"></textarea>
+                                <textarea placeholder="Message" id="message" required></textarea>
                             </div>
                             <div class="form-button">
-                                <button class="btn blue-btn">Send <i class="uil uil-message"></i></button>
+                                <button class="btn blue-btn" type="submit">Send <i class="uil uil-message"></i></button>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -491,7 +503,6 @@
         </a>
     </div>
 
-
     <!-- ----- TYPING JS Link ----- -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
@@ -500,6 +511,8 @@
 
     <!-- ----- MAIN JS ----- -->
     <script src="./index.js"></script>
+    <script type="module" src="./firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 </body>
 
 </html>

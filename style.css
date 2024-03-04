@@ -125,6 +125,7 @@ nav {
 .nav-menu-btn i {
     font-size: 28px;
     cursor: pointer;
+    color: #f1f1f1;
 }
 
 .active-link {
@@ -276,6 +277,7 @@ nav {
 }
 
 .social-media {
+    display: flex;
     margin-top: 25px;
 }
 
@@ -773,6 +775,9 @@ textarea {
     font-size: 18px;
     rotate: -45deg;
 }
+.alert{
+    display: none;
+}
 
 /* ----- FOOTER BOX ----- */
 footer {
@@ -892,6 +897,7 @@ footer {
     }
     .active .fa-times{
         display: block;
+        margin-right: 5px;
     }
     
     .nav-menu {
