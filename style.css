@@ -630,7 +630,7 @@ h3 {
 
 .stack-used .orange {
     font-size: 10px;
-    color: orangered;
+    color: orange;
 }
 
 .stack-used .blue {
@@ -641,6 +641,11 @@ h3 {
 .stack-used .yellow {
     font-size: 10px;
     color: yellow;
+}
+
+.stack-used .red {
+    font-size: 10px;
+    color: red;
 }
 
 .project-box label {
@@ -832,8 +837,8 @@ footer {
 
 .scroll-btn {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
